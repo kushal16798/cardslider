@@ -1,0 +1,13 @@
+name: test
+recipe: drupal9
+config:
+  database: mariadb
+services:
+  appserver:
+    type: 'php:7.4'
+    run:
+      - composer global remove hirak/prestissimo
+      - composer install
+    overrides:
+      environment:
+        PHP_MEMORY_LIMIT: 1G

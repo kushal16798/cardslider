@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+<div class="slicktest">
+{% for key,row in rows %}
+  {# {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+  %}
+  <div{{ row.attributes.addClass(row_classes) }}>
+    {{ row.content }}
+  </div> #}
+  <div>
+  <div class="card" style="width: 20rem;">
+    <img src="{{ view.style_plugin.getField(key, 'field_slider_image')|striptags|trim }}" class="card-img-top" alt="...">
+    {# {{ view.style_plugin.getField(key, 'field_slider_image') }} #}
+    <div class="card-body">
+      <h3 class="cardhead">{{ view.style_plugin.getField(key, 'title') }}</h3>
+      <h3 class="cardhead">Conference 2016</h3>
+      <i class="bi bi-tags-fill gray-light pe-2"></i><span class="text-secondary bold">Management, Leadership</span><br>
+      <i class="bi bi bi-calendar3 gray-light pe-2"></i><span class="text-secondary bold">11 May 2016</span><br>
+      <i class="bi bi bi-geo-alt-fill text-danger pe-2"></i><span class="text-secondary bold">Park Plaza Hotel, Bangalore, India</span><br>
+      
+    </div>
+    <div class="card-foot border-top">
+      <i class="bi bi-cloud-arrow-down gray-light px-3 footer-icon border-right"></i>
+      <i class="bi bi-heart gray-light px-3 footer-icon border-right"></i>
+      <i class="bi bi-share-fill gray-light px-3 footer-icon border-right"></i>
+      <span class="cardhead text-primary ps-2" style="margin-left: 5px;">View Details</span>
+    </div>
+  </div>
+  </div>
+{% endfor %}
+</div>

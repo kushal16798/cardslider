@@ -1,0 +1,107 @@
+ /* @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito:ital,wght@1,500&family=Raleway:wght@200;300;400;500;600;700;800&display=swap');
+
+ .cardhead {
+     font-size: 19px;
+     font-family: 'Raleway', sans-serif ;
+     font-weight: 600;
+     color: #464646;
+     line-height: 17px;
+ }
+ 
+ .gray-light {
+     color: #B2C8DF;
+ }
+ 
+ .bold {
+     font-family: 'Raleway', sans-serif ;
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 25px;
+ }
+ 
+ .footer-icon {
+     font-size: 23px;
+ }
+ 
+ .border-right {
+    border-right: 1px solid #dee2e6!important;
+ }
+ .card-body {
+     padding-bottom: 10px!important;
+     transition: all .3s ease-out;
+     background-color: white;
+ }
+ 
+ .card:hover{
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+ 
+ .card {
+     max-height: 335px;
+     overflow-y: hidden;
+     
+ }
+
+ .card-img-top{
+     height: 185px
+ }
+ .footer-icon:hover {
+     color: dodgerblue;
+ }
+ .slick-slide {
+     padding: 28px;
+ }
+ .slick-prev.slick-arrow::before,.slick-next.slick-arrow::before{
+     color: dodgerblue;
+ }
+ .slick-track {
+     margin-bottom: 20px;
+ }
+
+.nav-item > a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.slick-dots li button:before {
+    font-size: 18px!important;
+    color: dodgerblue!important;
+}
+.nav-tabs {
+    border-bottom: 2px solid dodgerblue !important;
+    
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover,.nav-tabs .nav-link:focus {
+    border: none!important;
+}
+.nav-tabs .nav-link {
+    margin-bottom: none;
+}
+.nav-tabs {
+    border-bottom: none;
+}
+.slick-dots li.slick-active button:before {
+        color: dodgerblue!important;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-item > a {
+        font-size: 13px;
+    }
+    .slick-dots {
+        margin-left: -25px!important;
+    }
+    .slick-slide {
+        padding: 23px;
+    }
+    .card {
+        max-height: 382px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .card {
+        max-height: 382px;
+    }
+} */
